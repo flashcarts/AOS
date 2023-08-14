@@ -27,8 +27,6 @@ jobs:
           wget https://github.com/wavemotion-dave/StellaDS/releases/latest/download/StellaDS.nds
           wget https://github.com/wavemotion-dave/A5200DS/releases/latest/download/A5200DS.nds
           wget https://github.com/wavemotion-dave/A7800DS/releases/latest/download/A7800DS.nds
-          wget https://github.com/wavemotion-dave/NINTV-DS/releases/latest/download/NINTV-DS.nds
-          wget https://github.com/wavemotion-dave/ColecoDS/releases/latest/download/ColecoDS.nds
           wget https://github.com/FluBBaOfWard/S8DS/releases/latest/download/S8DS.zip
           wget https://bitbucket.org/Coto88/snemulds/raw/e46406cc3c9fac986e6fb82cd859954ae15bde6c/release/arm7dldi-ntr/SNEmulDS.nds
           wget https://bitbucket.org/Coto88/snemulds/raw/e46406cc3c9fac986e6fb82cd859954ae15bde6c/release/snemul.cfg
