@@ -43,3 +43,14 @@ cp -r moonshell_210/moonshl2 out/r4xx/moonshl2
 cp moonshell_210/moonshl2.nds out/acep/__rpg/APP/moonshl2.nds
 cp moonshell_210/moonshl2.nds out/r4it/__rpg/APP/moonshl2.nds
 cp moonshell_210/moonshl2.nds out/r4xx/__rpg/APP/moonshl2.nds
+
+# copy other apps that aren't yet pulled from official sites
+cp -r extras/APP/* out/acep/__rpg/APP/
+cp -r extras/APP/* out/r4it/__rpg/APP/
+cp -r extras/APP/* out/r4xx/__rpg/APP/
+cp -r extras/ROMs out/acep/ROMs
+cp -r extras/ROMs out/r4it/ROMs
+cp -r extras/ROMs out/r4xx/ROMs
+cp -r extras/NitroGrafx out/acep/NitroGrafx
+cp -r extras/NitroGrafx out/r4it/NitroGrafx
+cp -r extras/NitroGrafx out/r4xx/NitroGrafx

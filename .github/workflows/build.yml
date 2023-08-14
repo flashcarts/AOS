@@ -32,6 +32,7 @@ jobs:
           wget https://github.com/FluBBaOfWard/S8DS/releases/latest/download/S8DS.zip
           wget https://bitbucket.org/Coto88/snemulds/raw/e46406cc3c9fac986e6fb82cd859954ae15bde6c/release/arm7dldi-ntr/SNEmulDS.nds
           wget https://bitbucket.org/Coto88/snemulds/raw/e46406cc3c9fac986e6fb82cd859954ae15bde6c/release/snemul.cfg
+          wget -O GBARunner2.nds https://github.com/unresolvedsymbol/GBARunner2-DSL-Enhanced/releases/download/v20201019-DSL_97447fe/GBARunner2_arm9dldi_ds.nds
           unzip S8DS.zip
           cp -r *.nds ../out/acep/__rpg/APP/
           cp -r *.nds ../out/r4it/__rpg/APP/
