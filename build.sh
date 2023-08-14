@@ -41,9 +41,9 @@ cp -r out/flashcart_base/* out/r4it/
 cp -r out/flashcart_base/* out/r4xx/
 
 # copy flashcart specific files
-cp aos_base/aos_acep.dat out/acep/_ds_menu.dat
-cp aos_base/aos_r4it.dat out/r4it/_dsmenu.dat
-cp aos_base/aos_r4xx.dat out/r4xx/_dsmenu.dat
-cp kernel/wood_acep.dat out/acep/wood.dat
-cp kernel/wood_r4it.dat out/r4it/wood.dat
-cp kernel/wood_r4xx.dat out/r4xx/wood.dat
+r4denc -k 0x4002 aos_base/aos_acep.nds out/acep/_ds_menu.dat
+r4denc -k 0x4002 aos_base/aos_r4it.nds out/r4it/_dsmenu.dat
+r4denc -k 0x4002 aos_base/aos_r4xx.nds out/r4xx/_dsmenu.dat
+r4denc -k 0x4002 kernel/wood_acep.nds out/acep/wood.dat
+r4denc -k 0x4002 kernel/wood_r4it.nds out/r4it/wood.dat
+r4denc -k 0x4002 kernel/wood_r4xx.nds out/r4xx/wood.dat
