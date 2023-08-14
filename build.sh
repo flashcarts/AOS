@@ -5,8 +5,9 @@ rm -rf out
 # stuff will be copied here, then copied to respective flashcart dirs
 mkdir -p out/flashcart_base
 
-# copy kernel files
+# copy kernel files, make empty cheat folder
 cp -r kernel/__rpg out/flashcart_base/__rpg
+mkdir -p out/flashcart_base/__rpg/cheats
 
 # copy AOS configuration files
 cp -r aos_configs out/flashcart_base/__rpg/extention
