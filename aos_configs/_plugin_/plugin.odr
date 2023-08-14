@@ -1,9 +1,9 @@
 ﻿[order]
 01=NDS.ini
 02=GBARunner2.ini
-03=FCemu.ini
-04=SFCemu.ini
-05=GBemu.ini
+03=GBemu.ini
+04=FCemu.ini
+05=SFCemu.ini
 06=MDemu.ini
 07=SEGAemu.ini
 08=PCEemu.ini
