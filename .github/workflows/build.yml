@@ -10,7 +10,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Package AOS
+    container: devkitpro/devkitarm
+    name: Build with Docker using devkitARM
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -34,6 +35,8 @@ jobs:
           wget https://github.com/Stewmath/GameYob/releases/download/v0.5.2/gameyob.zip
           unzip gameyob.zip; rm gameyob_dsi.nds
           unzip S8DS.zip
+          # for whatever reason this needs to be DLDI patched, doesn't want to work from AOS directly
+          dlditool ../kernel/__rpg/game.dldi gameyob.nds
           cp -r *.nds ../out/acep/__rpg/APP/
           cp -r *.nds ../out/r4it/__rpg/APP/
           cp -r *.nds ../out/r4xx/__rpg/APP/
