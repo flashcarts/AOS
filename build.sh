@@ -1,56 +1,48 @@
 # prep
 rm -rf out
 
+# make flashcart base folder
+# stuff will be copied here, then copied to respective flashcart dirs
+mkdir -p out/flashcart_base
+
+# copy kernel files
+cp -r kernel/__rpg out/flashcart_base/__rpg
+
+# copy AOS configuration files
+cp -r aos_configs out/flashcart_base/__rpg/extention
+
+# build AOS theme
+cd aos_theme
+zip -Z store -r ../out/flashcart_base/__rpg/extention/theme.res *
+cd ..
+
+# prep for app copy
+mkdir -p out/flashcart_base/__rpg/APP
+
+# copy moonshl2
+cp -r moonshell_210/moonshl2 out/flashcart_base/moonshl2
+# and the loader to where it needs to go
+cp moonshell_210/moonshl2.nds out/flashcart_base/__rpg/APP/moonshl2.nds
+
+# copy other apps that aren't yet pulled from official sites
+cp -r extras/APP/* out/flashcart_base/__rpg/APP/
+cp -r extras/ROMs out/flashcart_base/ROMs
+cp -r extras/NitroGrafx out/flashcart_base/NitroGrafx
+
 # make flashcart dirs
 mkdir -p out/acep
 mkdir -p out/r4it
 mkdir -p out/r4xx
 
-# copy AOS
+# copy base to all flashcart dirs
+cp -r out/flashcart_base/* out/acep/
+cp -r out/flashcart_base/* out/r4it/
+cp -r out/flashcart_base/* out/r4xx/
+
+# copy flashcart specific files
 cp aos_base/aos_acep.dat out/acep/_ds_menu.dat
 cp aos_base/aos_r4it.dat out/r4it/_dsmenu.dat
 cp aos_base/aos_r4xx.dat out/r4xx/_dsmenu.dat
-
-# copy kernel files
-cp -r kernel/__rpg out/acep/__rpg
-cp -r kernel/__rpg out/r4it/__rpg
-cp -r kernel/__rpg out/r4xx/__rpg
 cp kernel/wood_acep.dat out/acep/wood.dat
 cp kernel/wood_r4it.dat out/r4it/wood.dat
 cp kernel/wood_r4xx.dat out/r4xx/wood.dat
-
-# copy AOS configuration files
-cp -r aos_configs out/acep/__rpg/extention
-cp -r aos_configs out/r4it/__rpg/extention
-cp -r aos_configs out/r4xx/__rpg/extention
-
-# build AOS theme
-cd aos_theme && zip -r ../out/acep/__rpg/extention/theme.res -Z store *
-cd ..
-cp out/acep/__rpg/extention/theme.res out/r4it/__rpg/extention/theme.res
-cp out/acep/__rpg/extention/theme.res out/r4xx/__rpg/extention/theme.res
-
-# prep for app copy
-mkdir -p out/acep/__rpg/APP
-mkdir -p out/r4it/__rpg/APP
-mkdir -p out/r4xx/__rpg/APP
-
-# copy moonshl2
-cp -r moonshell_210/moonshl2 out/acep/moonshl2
-cp -r moonshell_210/moonshl2 out/r4it/moonshl2
-cp -r moonshell_210/moonshl2 out/r4xx/moonshl2
-# and the loader to where it needs to go
-cp moonshell_210/moonshl2.nds out/acep/__rpg/APP/moonshl2.nds
-cp moonshell_210/moonshl2.nds out/r4it/__rpg/APP/moonshl2.nds
-cp moonshell_210/moonshl2.nds out/r4xx/__rpg/APP/moonshl2.nds
-
-# copy other apps that aren't yet pulled from official sites
-cp -r extras/APP/* out/acep/__rpg/APP/
-cp -r extras/APP/* out/r4it/__rpg/APP/
-cp -r extras/APP/* out/r4xx/__rpg/APP/
-cp -r extras/ROMs out/acep/ROMs
-cp -r extras/ROMs out/r4it/ROMs
-cp -r extras/ROMs out/r4xx/ROMs
-cp -r extras/NitroGrafx out/acep/NitroGrafx
-cp -r extras/NitroGrafx out/r4it/NitroGrafx
-cp -r extras/NitroGrafx out/r4xx/NitroGrafx
