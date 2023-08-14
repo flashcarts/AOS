@@ -33,12 +33,12 @@ jobs:
           wget https://bitbucket.org/Coto88/snemulds/raw/e46406cc3c9fac986e6fb82cd859954ae15bde6c/release/arm7dldi-ntr/SNEmulDS.nds
           wget https://bitbucket.org/Coto88/snemulds/src/master/release/snemul.cfg
           unzip S8DS.zip
-          cp -r *.nds out/acep/__rpg/APP/
-          cp -r *.nds out/r4it/__rpg/APP/
-          cp -r *.nds out/r4xx/__rpg/APP/
-          cp snemul.cfg out/acep/snemul.cfg
-          cp snemul.cfg out/r4it/snemul.cfg
-          cp snemul.cfg out/r4xx/snemul.cfg
+          cp -r *.nds ../out/acep/__rpg/APP/
+          cp -r *.nds ../out/r4it/__rpg/APP/
+          cp -r *.nds ../out/r4xx/__rpg/APP/
+          cp snemul.cfg ../out/acep/snemul.cfg
+          cp snemul.cfg ../out/r4it/snemul.cfg
+          cp snemul.cfg ../out/r4xx/snemul.cfg
 
       - name: Package individual kernel files
         run: |
