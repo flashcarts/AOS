@@ -24,6 +24,12 @@ cp -r aos_configs out/acep/__rpg/extention
 cp -r aos_configs out/r4it/__rpg/extention
 cp -r aos_configs out/r4xx/__rpg/extention
 
+# build AOS theme
+cd aos_theme && zip -r ../out/acep/__rpg/extention/theme.res -Z store *
+cd ..
+cp out/acep/__rpg/extention/theme.res out/r4it/__rpg/extention/theme.res
+cp out/acep/__rpg/extention/theme.res out/r4xx/__rpg/extention/theme.res
+
 # prep for app copy
 mkdir -p out/acep/__rpg/APP
 mkdir -p out/r4it/__rpg/APP
