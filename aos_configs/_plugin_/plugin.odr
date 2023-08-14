@@ -9,8 +9,8 @@
 08=PCEemu.ini
 09=NEOemu.ini
 10=A800.ini
-10=A2600.ini
-10=A5200.ini
-10=A7800.ini
-11=MOONSHELL.ini
-12=Slot-2.ini
+11=A2600.ini
+12=A5200.ini
+13=A7800.ini
+14=MOONSHELL.ini
+15=Slot-2.ini
