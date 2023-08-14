@@ -23,6 +23,7 @@ This repository aims to re-pack the official AOS software by ace3ds.com with new
 - [StellaDS](https://github.com/wavemotion-dave/StellaDS)
 - [A5200DS](https://github.com/wavemotion-dave/A5200DS)
 - [A7800DS](https://github.com/wavemotion-dave/A7800DS)
+- [ColecoDS](https://github.com/wavemotion-dave/ColecoDS)
 - [NesDS](https://github.com/DS-Homebrew/NesDS)
 - [GBARunner2 DSL Enhanced](https://github.com/unresolvedsymbol/GBARunner2-DSL-Enhanced)
 - [GameYob](https://github.com/Stewmath/GameYob)
