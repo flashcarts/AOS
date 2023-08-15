@@ -1,11 +1,8 @@
-name: Package AOS
+name: Package AOS for release
 
 on:
-  push:
-    branches: ["master"]
-    paths-ignore:
-      - 'README.md'
-  workflow_dispatch:
+  release:
+    types: [published]
 
 jobs:
   build:
@@ -64,3 +61,12 @@ jobs:
         with:
           path: ~/artifacts/*
           name: build
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: |
+            out/AOS_Ace3DSPlus.zip
+            out/AOS_Gateway.zip
+            out/AOS_R4iLS.zip
+            README.md
