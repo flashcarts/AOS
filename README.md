@@ -1,5 +1,7 @@
 # AOS - Ace OS repackaged for Ace3DS+/Gateway/R4iLS
 
+https://github.com/flashcarts/AOS
+
 AOS is a multi-loader for Ace3DS+ and related carts.
 
 This repository aims to re-pack the official AOS software by ace3ds.com with new and updated homebrew apps; it is in no way affiliated with ace3ds.com.
