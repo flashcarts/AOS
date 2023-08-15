@@ -1,7 +1,8 @@
-# ACE3DS Theme
+# AceDark
 
-**Author:**        ace3ds.com
-**Release Date:**  2013
+**Author:**        Sanras & ace3ds.com
+
+**Release Date:**  08/2023
 
 ## Additional Features
 
