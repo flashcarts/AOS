@@ -19,6 +19,10 @@ jobs:
         run: |
           chmod +x build.sh
           ./build.sh
+      - name: Install p7zip for nesDS
+        run: |
+          sudo apt update
+          sudo apt install p7zip-full -y
 
       - name: Download other applications
         run: |
@@ -34,8 +38,10 @@ jobs:
           wget https://bitbucket.org/Coto88/snemulds/raw/e46406cc3c9fac986e6fb82cd859954ae15bde6c/release/snemul.cfg
           wget -O GBARunner2.nds https://github.com/unresolvedsymbol/GBARunner2-DSL-Enhanced/releases/download/v20201019-DSL_97447fe/GBARunner2_arm9dldi_ds.nds
           wget https://github.com/Stewmath/GameYob/releases/download/v0.5.2/gameyob.zip
+          wget https://github.com/DS-Homebrew/NesDS/releases/latest/download/nesDS.7z
           unzip gameyob.zip; rm gameyob_dsi.nds
           unzip S8DS.zip
+          7z e nesDS.7z
           # for whatever reason this needs to be DLDI patched, doesn't want to work from AOS directly
           dlditool ../kernel/__rpg/game.dldi gameyob.nds
           cp -r *.nds ../out/acep/__rpg/APP/
