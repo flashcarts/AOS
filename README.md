@@ -37,6 +37,24 @@ This repository aims to re-pack the official AOS software by ace3ds.com with new
 - [S8DS](https://github.com/FluBBaOfWard/S8DS)
 - [SNEmulDS](https://bitbucket.org/Coto88/snemulds)
 
+### Setup
+
+1. Identify your cartridge and choose the correct package version based on the supported carts list above.
+2. Download the appropriate .zip file for your cart from the [releases page.](https://github.com/flashcarts/AOS/releases/latest)
+3. Extract and copy the *contents* of the zip file to your flashcart's SD card root.
+4. A lot of the emulators included in this package require a BIOS file, or can use one to improve compatibility. You can obtain the BIOS files for each emulator and place them in the appropriate locations, like so (expected file name is in parentheses):
+
+- BIOS **Optional**, but Highly Recommended:
+   - A8DS (`atarixl.rom`, `atariosb.rom`, or `ataribas.rom`) - `/roms/bios`
+   - A5200DS (`5200.rom`) - `/roms/bios`
+   - A7800DS (`highscore.rom` - for 7800 High Score saving) - `/roms/bios`
+   - GBARunner2 (`bios.bin`) - `/gba` or `/_gba`
+   - GameYob (`gbc_bios.bin` - provides color in GBC titles) - `/roms/gb/`
+   - S8DS - See [GitHub ReadMe](https://github.com/FluBBaOfWard/S8DS), multiple BIOSes supported.
+   - 
+ 
+- BIOS **Required**
+   - ColecoDS (`coleco.rom`) - `/roms/bios`
 
 ### Packaging steps
 
