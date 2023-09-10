@@ -51,7 +51,6 @@ This repository aims to re-pack the official AOS software by ace3ds.com with new
    - GBARunner2 (`bios.bin`) - `/gba` or `/_gba`
    - GameYob (`gbc_bios.bin` - provides color in GBC titles) - `/roms/gb/`
    - S8DS - See [GitHub ReadMe](https://github.com/FluBBaOfWard/S8DS), multiple BIOSes supported.
-   - 
  
 - BIOS **Required**
    - ColecoDS (`coleco.rom`) - `/roms/bios`
