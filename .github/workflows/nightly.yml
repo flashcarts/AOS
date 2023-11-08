@@ -34,8 +34,6 @@ jobs:
           wget https://github.com/wavemotion-dave/A7800DS/releases/latest/download/A7800DS.nds
           wget https://github.com/wavemotion-dave/ColecoDS/releases/latest/download/ColecoDS.nds
           wget https://github.com/FluBBaOfWard/S8DS/releases/latest/download/S8DS.zip
-          wget https://github.com/lifehackerhansol/snemulds/blob/devkitarm/release/snemuldsv6.nds
-          wget https://bitbucket.org/Coto88/snemulds/raw/e46406cc3c9fac986e6fb82cd859954ae15bde6c/release/snemul.cfg
           wget -O GBARunner2.nds https://github.com/unresolvedsymbol/GBARunner2-DSL-Enhanced/releases/download/v20201019-DSL_97447fe/GBARunner2_arm9dldi_ds.nds
           wget https://github.com/Stewmath/GameYob/releases/download/v0.5.2/gameyob.zip
           wget https://github.com/DS-Homebrew/NesDS/releases/latest/download/nesDS.7z
@@ -44,13 +42,9 @@ jobs:
           7z e nesDS.7z
           # for whatever reason this needs to be DLDI patched, doesn't want to work from AOS directly
           dlditool ../kernel/__rpg/game.dldi gameyob.nds
-          mv snemuldsv6.nds snemulds.nds
           cp -r *.nds ../out/acep/__rpg/APP/
           cp -r *.nds ../out/r4it/__rpg/APP/
           cp -r *.nds ../out/r4xx/__rpg/APP/
-          cp snemul.cfg ../out/acep/snemul.cfg
-          cp snemul.cfg ../out/r4it/snemul.cfg
-          cp snemul.cfg ../out/r4xx/snemul.cfg
 
       - name: Package individual kernel files
         run: |
