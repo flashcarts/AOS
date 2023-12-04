@@ -19,7 +19,7 @@ This repository aims to re-pack the official AOS software by ace3ds.com with new
     - R4iLS
     - r4isdhc.com.cn
     - r4isdhc.hk 2021+ (2024 is an r4ds-pro, and not supported!)
-    - "Fake" DS games that are actually flashcarts with an SD slot
+    - "Fake" DS games that are actually flashcarts with an SD slot - [Example](https://i.imgur.com/SNVieqW.png)
 
 ### Currently bundled applications
 
