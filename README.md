@@ -55,6 +55,9 @@ This repository aims to re-pack the official AOS software by ace3ds.com with new
 - BIOS **Required**
    - ColecoDS (`coleco.rom`) - `/roms/bios`
 
+### Notes on Emulators in This Package
+- JenesisDS requires ROMs to be in `.gen`, `.bin`, or `.smd` format to be recognized in the file browser. If you have `.md` ROMs, rename them to `.gen` or `.bin` before placing them in `/ROMs/gen` on your SD card.
+
 ### Packaging steps
 
 0. You *must* be on Linux
