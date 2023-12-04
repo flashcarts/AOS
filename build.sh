@@ -29,6 +29,7 @@ cp moonshell_210/moonshl2.nds out/flashcart_base/__rpg/APP/moonshl2.nds
 cp -r extras/APP/* out/flashcart_base/__rpg/APP/
 cp -r extras/ROMs out/flashcart_base/ROMs
 cp -r extras/NitroGrafx out/flashcart_base/NitroGrafx
+cp -r extras/data out/flashcart_base/data
 cp extras/snemul.cfg out/flashcart_base
 
 # make flashcart dirs
