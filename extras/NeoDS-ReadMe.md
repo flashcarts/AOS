@@ -17,7 +17,7 @@ We will be configuring NeoDS to use the Universe BIOS, as this enables lots of n
 
 You should now have all the files necessary to package NeoDS roms. Make a folder somewhere on your PC. Place the `NeoDsConvert.exe` program and the prepared `neogeo.zip` inside this folder. Open the folder in your file manager, and click on the address bar. Clear everything in the address bar, type in `cmd`, and then hit the Enter key. Inside the Command Prompt window that popped up, type the following: `NeoDsConvert.exe -bios8`, and hit Enter.
 
-Check the folder where you placed `neogeo.zip`. If everything went well, there should now be a `neogeo.neo` file there. This means you are read to start converting actual game ROMs.
+Check the folder where you placed `neogeo.zip`. If everything went well, there should now be a `neogeo.neo` file there. This means you are ready to start converting actual game ROMs.
 
 ## Converting NeoGeo ROMs for NeoDS: Step 2 - Game ROMs
 Next, you will need to obtain NeoGeo ROMs to play on NeoDS. NeoDS uses the same ROM sets as MAME, so you should be able to find MAME ROMs that will be compatible with NeoDS.
