@@ -27,7 +27,7 @@ The following carts can be either an Ace3DS+ or an R4iLS:
 
 If you have one of these carts, you will need to grab an empty SD card, insert it into the cart, and boot the cart on your DS.
 
-- If you get a missing `_DS_MENU.DAT` error, you need the Ace3DS+ package
+- If you get a missing `_DS_MENU.DAT` error, you need the Ace3DS+ package.
 - If you get stuck at a loading screen, or get a missing `_DSMENU.DAT` error, you need the R4iLS package.
 - If you get a `MENU?` screen, you have a DSTTi timebomb clone and can't use AOS. These carts use [YSMenu](https://gbatemp.net/download/retrogamefan-multi-cart-update.35737/).
 
@@ -68,6 +68,7 @@ If you have one of these carts, you will need to grab an empty SD card, insert i
 
 ### Notes on Emulators in This Package
 - JenesisDS requires ROMs to be in `.gen`, `.bin`, or `.smd` format to be recognized in the file browser. If you have `.md` ROMs, rename them to `.gen` or `.bin` before placing them in `/ROMs/gen` on your SD card.
+- NeoDS requires ROMs to be converted to `.neo` format before they can be used. [See this README before using.](https://github.com/flashcarts/AOS/blob/master/extras/NeoDS-ReadMe.md)
 
 ---
 
