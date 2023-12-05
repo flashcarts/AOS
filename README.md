@@ -11,7 +11,6 @@ This repository aims to re-pack the official AOS software by ace3ds.com with new
 - AOS_Ace3DSPlus:
     - Ace3DS+
     - Ace3DS X
-    - XXX in 1
 - AOS_Gateway:
     - Gateway Blue
     - R4infinity 2
