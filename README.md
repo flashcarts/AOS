@@ -29,6 +29,7 @@ If you have one of these carts, you will need to grab an empty SD card, insert i
 
 - If you get a missing `_DS_MENU.DAT` error, you need the Ace3DS+ package
 - If you get stuck at a loading screen, or get a missing `_DSMENU.DAT` error, you need the R4iLS package.
+- If you get a `MENU?` screen, you have a DSTTi timebomb clone and can't use AOS. These carts use [YSMenu](https://gbatemp.net/download/retrogamefan-multi-cart-update.35737/).
 
 ### Currently bundled applications
 
