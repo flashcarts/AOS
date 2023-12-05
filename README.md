@@ -19,7 +19,17 @@ This repository aims to re-pack the official AOS software by ace3ds.com with new
     - R4iLS
     - r4isdhc.com.cn
     - r4isdhc.hk 2021-2023 (2024 is an r4ds-pro, and not supported!)
-    - "Fake" DS games that are actually flashcarts with an SD slot - [Example](https://i.imgur.com/SNVieqW.png)
+ 
+The following carts can be either an Ace3DS+ or an R4iLS:
+
+- XXX in 1 carts
+- Unlabeled carts with a red PCB - [(Image)](https://www.flashcarts.net/assets/images/ds_carts/ace3ds-nolabel.png)
+- Flashcarts labeled as a game - [(Image)](https://i.imgur.com/SNVieqW.png)
+
+If you have one of these carts, you will need to grab an empty SD card, insert it into the cart, and boot the cart on your DS.
+
+- If you get a missing `_DS_MENU.DAT` error, you need the Ace3DS+ package
+- If you get stuck at a loading screen, or get a missing `_DSMENU.DAT` error, you need the R4iLS package.
 
 ### Currently bundled applications
 
