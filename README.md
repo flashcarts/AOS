@@ -17,7 +17,7 @@ This repository aims to re-pack the official AOS software by ace3ds.com with new
 - AOS_R4iLS:
     - R4iLS
     - r4isdhc.com.cn
-    - r4isdhc.hk 2021-2023 (2024 is an r4ds-pro, and not supported!)
+    - r4isdhc.hk 2021+
     - ge.ndsi.in GEi HOT
  
 The following carts can be either an Ace3DS+ or an R4iLS:
