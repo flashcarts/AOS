@@ -42,6 +42,10 @@ cp -r out/flashcart_base/* out/acep/
 cp -r out/flashcart_base/* out/r4it/
 cp -r out/flashcart_base/* out/r4xx/
 
+# copy flashcart specific moonshl2 reset files
+cp moonshell_210/reset_files/R4TF-ACEP.nds out/acep/moonshl2/resetmse/R4TF.nds
+cp moonshell_210/reset_files/R4TF-R4iLS.nds out/r4xx/moonshl2/resetmse/R4TF.nds
+
 # copy flashcart specific files
 r4denc -k 0x4002 aos_base/aos_acep.nds out/acep/_ds_menu.dat
 r4denc -k 0x4002 aos_base/aos_r4it.nds out/r4it/_dsmenu.dat
