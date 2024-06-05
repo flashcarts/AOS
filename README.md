@@ -41,6 +41,8 @@ If you have one of these carts, you will need to grab an empty SD card, insert i
 - [ColecoDS](https://github.com/wavemotion-dave/ColecoDS)
 - [NesDS](https://github.com/DS-Homebrew/NesDS)
 - [GBARunner2 DSL Enhanced](https://github.com/unresolvedsymbol/GBARunner2-DSL-Enhanced)
+- [GBARunner3](https://nightly.link/Gericom/GBARunner3/workflows/nightly/develop/GBARunner3.zip)
+- [GBARunner3 Frontend](https://github.com/flashcarts/gbar3-frontend)
 - [GameYob](https://github.com/Stewmath/GameYob)
 - [jEnesisDS](http://www.workingdesign.de/projects/jenesisds.php) ([archive](http://web.archive.org/web/20220813181438/http://www.workingdesign.de/projects/jenesisds.php))
 - [MoonShell 2.10](http://home.att.ne.jp/blue/moonlight) ([archive](http://web.archive.org/web/20111018193827/http://home.att.ne.jp:80/blue/moonlight/))
@@ -56,18 +58,20 @@ If you have one of these carts, you will need to grab an empty SD card, insert i
 3. Extract and copy the *contents* of the zip file to your flashcart's SD card root.
 4. A lot of the emulators included in this package require a BIOS file, or can use one to improve compatibility. You can obtain the BIOS files for each emulator and place them in the appropriate locations, like so (expected file name is in parentheses):
 
+- BIOS **Required for Use**
+   - GBARunner3 - (`bios.bin`) - `/_gba`
+   - ColecoDS (`coleco.rom`) - `/roms/bios`
+
 - BIOS **Optional**, but Highly Recommended:
    - A8DS (`atarixl.rom`, `atariosb.rom`, or `ataribas.rom`) - `/roms/bios`
    - A5200DS (`5200.rom`) - `/roms/bios`
    - A7800DS (`highscore.rom` - for 7800 High Score saving) - `/roms/bios`
-   - GBARunner2 (`bios.bin`) - `/gba` or `/_gba`
+   - GBARunner2 (`bios.bin`) - `/_gba`
    - GameYob (`gbc_bios.bin` - provides color in GBC titles) - `/roms/gb/`
    - S8DS - See [GitHub ReadMe](https://github.com/FluBBaOfWard/S8DS), multiple BIOSes supported.
- 
-- BIOS **Required**
-   - ColecoDS (`coleco.rom`) - `/roms/bios`
 
 ### Notes on Emulators in This Package
+- While GBARunner2 will work without a BIOS, GBARunner3 **will not** until one is placed in `_gba`. Be sure to add a GameBoy Advance BIOS before using it.
 - JenesisDS requires ROMs to be in `.gen`, `.bin`, or `.smd` format to be recognized in the file browser. If you have `.md` ROMs, rename them to `.gen` or `.bin` before placing them in `/ROMs/gen` on your SD card.
 - NeoDS requires ROMs to be converted to `.neo` format before they can be used. [See this README before using.](https://github.com/flashcarts/AOS/blob/master/extras/NeoDS-ReadMe.md)
 
