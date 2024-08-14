@@ -53,7 +53,7 @@ cp moonshell_210/reset_files/R4TF-ACEP.nds out/ex4ds/moonshl2/resetmse/R4TF.nds
 cp -r extras/ex4ds/_ex4mov_ out/ex4ds/_ex4mov_
 cp extras/ex4ds/*.ini extras/ex4ds/plugin.odr out/ex4ds/__rpg/extention/_plugin_/
 cp extras/ex4ds/themes/theme.res out/ex4ds/__rpg/extention/theme.res
-cp -r "extras/ex4ds/themes/metro ex4ds" "extra/ex4ds/themes/metro vista" out/ex4ds/__rpg/ui/
+cp -r "extras/ex4ds/themes/metro ex4ds" "extras/ex4ds/themes/metro vista" out/ex4ds/__rpg/ui/
 cp extras/ex4ds/globalsettings.ini out/ex4ds/__rpg/globalsettings.ini
 
 # copy flashcart specific files
