@@ -36,20 +36,29 @@ cp extras/snemul.cfg out/flashcart_base
 mkdir -p out/acep
 mkdir -p out/r4it
 mkdir -p out/r4xx
+mkdir -p out/ex4ds
 
 # copy base to all flashcart dirs
 cp -r out/flashcart_base/* out/acep/
 cp -r out/flashcart_base/* out/r4it/
 cp -r out/flashcart_base/* out/r4xx/
+cp -r out/flashcart_base/* out/ex4ds/
 
 # copy flashcart specific moonshl2 reset files
 cp moonshell_210/reset_files/R4TF-ACEP.nds out/acep/moonshl2/resetmse/R4TF.nds
 cp moonshell_210/reset_files/R4TF-R4iLS.nds out/r4xx/moonshl2/resetmse/R4TF.nds
 
+# copy ex4ds specific features
+cp -r extras/ex4ds/_ex4mov_ out/ex4ds/_ex4mov_
+cp extras/ex4ds/*.ini extras/ex4ds/plugin.odr out/ex4ds/__rpg/extention/_plugin_/
+cp extras/ex4ds/theme.res out/ex4ds/__rpg/extention/theme.res
+
 # copy flashcart specific files
 r4denc -k 0x4002 aos_base/aos_acep.nds out/acep/_ds_menu.dat
 r4denc -k 0x4002 aos_base/aos_r4it.nds out/r4it/_dsmenu.dat
 r4denc -k 0x4002 aos_base/aos_r4xx.nds out/r4xx/_dsmenu.dat
+r4denc -k 0x484a aos_base/aos_acep.nds out/ex4ds/_ds_menu.dat
 r4denc -k 0x4002 kernel/wood_acep.nds out/acep/wood.dat
 r4denc -k 0x4002 kernel/wood_r4it.nds out/r4it/wood.dat
 r4denc -k 0x4002 kernel/wood_r4xx.nds out/r4xx/wood.dat
+r4denc -k 0x4002 kernel/wood_r4xx.nds out/ex4ds/wood.dat

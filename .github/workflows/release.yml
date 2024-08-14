@@ -40,6 +40,7 @@ jobs:
           cp -r _gba ../out/acep
           cp -r _gba ../out/r4it
           cp -r _gba ../out/r4xx
+          cp -r _gba ../out/ex4ds
           unzip gameyob.zip; rm gameyob_dsi.nds
           unzip S8DS.zip
           7z e nesDS.7z
@@ -48,6 +49,7 @@ jobs:
           cp -r *.nds ../out/acep/__rpg/APP/
           cp -r *.nds ../out/r4it/__rpg/APP/
           cp -r *.nds ../out/r4xx/__rpg/APP/
+          cp -r *.nds ../out/ex4ds/__rpg/APP/
 
       - name: Package individual kernel files
         run: |
@@ -57,6 +59,8 @@ jobs:
           zip -r ../AOS_Gateway.zip *
           cd ../r4xx
           zip -r ../AOS_R4iLS.zip *
+          cd ../ex4ds
+          zip -r ../AOS_EX4DS.zip *
 
       - name: Prepare for publishing
         run: |
@@ -76,4 +80,5 @@ jobs:
             out/AOS_Ace3DSPlus.zip
             out/AOS_Gateway.zip
             out/AOS_R4iLS.zip
+            out/AOS_EX4DS.zip
             README.md
