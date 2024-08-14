@@ -47,6 +47,7 @@ cp -r out/flashcart_base/* out/ex4ds/
 # copy flashcart specific moonshl2 reset files
 cp moonshell_210/reset_files/R4TF-ACEP.nds out/acep/moonshl2/resetmse/R4TF.nds
 cp moonshell_210/reset_files/R4TF-R4iLS.nds out/r4xx/moonshl2/resetmse/R4TF.nds
+cp moonshell_210/reset_files/R4TF-ACEP.nds out/ex4ds/moonshl2/resetmse/R4TF.nds
 
 # copy ex4ds specific features
 cp -r extras/ex4ds/_ex4mov_ out/ex4ds/_ex4mov_
