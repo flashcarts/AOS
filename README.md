@@ -1,4 +1,4 @@
-# AOS - Ace OS repackaged for Ace3DS+/Gateway/R4iLS
+# AOS - Ace OS repackaged for Ace3DS+/Gateway/R4iLS/EX4DS
 
 https://github.com/flashcarts/AOS
 
@@ -19,6 +19,8 @@ This repository aims to re-pack the official AOS software by ace3ds.com with new
     - r4isdhc.com.cn
     - r4isdhc.hk 2021+
     - ge.ndsi.in GEi HOT
+- AOS_EX4DS:
+    - EX4DS
  
 The following carts can be either an Ace3DS+ or an R4iLS:
 
