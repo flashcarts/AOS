@@ -49,12 +49,18 @@ cp moonshell_210/reset_files/R4TF-ACEP.nds out/acep/moonshl2/resetmse/R4TF.nds
 cp moonshell_210/reset_files/R4TF-R4iLS.nds out/r4xx/moonshl2/resetmse/R4TF.nds
 cp moonshell_210/reset_files/R4TF-ACEP.nds out/ex4ds/moonshl2/resetmse/R4TF.nds
 
+# [EX4] Replace AOS theme with EX4DS theme
+rm out/ex4ds/__rpg/extention/theme.res
+cp extras/ex4ds/AOS/setting.ini out/ex4ds/__rpg/extention
+cd ex4ds_theme
+zip -Z store -r ../out/ex4ds/__rpg/extention/theme.res *
+cd ..
+
 # copy ex4ds specific features
 cp -r extras/ex4ds/_ex4mov_ out/ex4ds/_ex4mov_
-cp extras/ex4ds/*.ini extras/ex4ds/plugin.odr out/ex4ds/__rpg/extention/_plugin_/
-cp extras/ex4ds/themes/theme.res extras/ex4ds/themes/setting.ini out/ex4ds/__rpg/extention
-cp -r "extras/ex4ds/themes/metro ex4ds" "extras/ex4ds/themes/metro vista" out/ex4ds/__rpg/ui/
-cp extras/ex4ds/globalsettings.ini out/ex4ds/__rpg/globalsettings.ini
+cp -r extras/ex4ds/_plugin_ out/ex4ds/__rpg/extention/_plugin_
+cp -r extras/ex4ds/Wood/ui/ out/ex4ds/__rpg/ui
+cp extras/ex4ds/Wood/globalsettings.ini out/ex4ds/__rpg/globalsettings.ini
 
 # copy flashcart specific files
 r4denc -k 0x4002 aos_base/aos_acep.nds out/acep/_ds_menu.dat
