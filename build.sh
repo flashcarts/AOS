@@ -58,8 +58,8 @@ cd ..
 
 # copy ex4ds specific features
 cp -r extras/ex4ds/_ex4mov_ out/ex4ds/_ex4mov_
-cp -r extras/ex4ds/_plugin_ out/ex4ds/__rpg/extention/_plugin_
-cp -r extras/ex4ds/Wood/ui/ out/ex4ds/__rpg/ui
+cp -r extras/ex4ds/_plugin_/* out/ex4ds/__rpg/extention/_plugin_
+cp -r extras/ex4ds/Wood/ui/* out/ex4ds/__rpg/ui
 cp extras/ex4ds/Wood/globalsettings.ini out/ex4ds/__rpg/globalsettings.ini
 
 # copy flashcart specific files
