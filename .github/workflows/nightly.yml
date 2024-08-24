@@ -14,7 +14,7 @@ jobs:
     name: Build with Docker using devkitARM
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Build initial zips
         run: |
           chmod +x build.sh
@@ -71,7 +71,7 @@ jobs:
           cp out/AOS_*.zip ~/artifacts
 
       - name: Publish build to GH Actions
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           path: ~/artifacts/*
           name: build
