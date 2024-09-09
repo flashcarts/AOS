@@ -71,3 +71,6 @@ r4denc -k 0x4002 kernel/wood_acep.nds out/acep/wood.dat
 r4denc -k 0x4002 kernel/wood_r4it.nds out/r4it/wood.dat
 r4denc -k 0x4002 kernel/wood_r4xx.nds out/r4xx/wood.dat
 r4denc -k 0x4002 kernel/wood_r4xx.nds out/ex4ds/wood.dat
+
+# Extra _dsmenu.dat for EX4 soft-reset
+cp out/ex4ds/_ds_menu.dat out/ex4ds/_dsmenu.dat
