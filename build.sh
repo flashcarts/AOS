@@ -46,8 +46,9 @@ cp -r out/flashcart_base/* out/ex4ds/
 
 # copy flashcart specific moonshl2 reset files
 cp moonshell_210/reset_files/R4TF-ACEP.nds out/acep/moonshl2/resetmse/R4TF.nds
-cp moonshell_210/reset_files/R4TF-R4iLS.nds out/r4xx/moonshl2/resetmse/R4TF.nds
 cp moonshell_210/reset_files/R4TF-ACEP.nds out/ex4ds/moonshl2/resetmse/R4TF.nds
+cp moonshell_210/reset_files/R4TF-R4iLS.nds out/r4xx/moonshl2/resetmse/R4TF.nds
+cp moonshell_210/reset_files/R4TF-R4iLS.nds out/r4it/moonshl2/resetmse/R4TF.nds
 
 # [EX4] Replace AOS theme with EX4DS theme
 rm out/ex4ds/__rpg/extention/theme.res
