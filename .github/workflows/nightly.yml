@@ -22,7 +22,6 @@ jobs:
       - name: Install p7zip for nesDS
         run: |
           sudo apt update
-          sudo apt install p7zip-full -y
 
       - name: Download other applications
         run: |
@@ -38,7 +37,7 @@ jobs:
           wget https://files.deletecat.com/GBARunner3-hicode.zip
           wget -O GBAR3-Frontend.nds https://github.com/flashcarts/gbar3-frontend/releases/download/v0.9.0-fcnet2/gbar3-frontend-AOS.nds
           wget https://github.com/Stewmath/GameYob/releases/download/v0.5.2/gameyob.zip
-          wget https://github.com/DS-Homebrew/NesDS/releases/latest/download/nesDS.7z
+          wget https://github.com/DS-Homebrew/NesDS/releases/latest/download/nesDS.nds
           unzip GBARunner3-hicode.zip
           cp -r _gba ../out/acep
           cp -r _gba ../out/r4it
@@ -46,7 +45,6 @@ jobs:
           cp -r _gba ../out/ex4ds
           unzip gameyob.zip; rm gameyob_dsi.nds
           unzip S8DS.zip
-          7z e nesDS.7z
           # for whatever reason this needs to be DLDI patched, doesn't want to work from AOS directly
           dlditool ../kernel/__rpg/game.dldi gameyob.nds
           cp -r *.nds ../out/acep/__rpg/APP/
