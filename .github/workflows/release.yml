@@ -16,11 +16,6 @@ jobs:
         run: |
           chmod +x build.sh
           ./build.sh
-      - name: Install p7zip for nesDS
-        run: |
-          sudo apt update
-          sudo apt install p7zip-full -y
-
       - name: Download other applications
         run: |
           mkdir -p extras_external
@@ -44,8 +39,9 @@ jobs:
           unzip gameyob.zip; rm gameyob_dsi.nds
           unzip S8DS.zip
           7z e nesDS.7z
-          # for whatever reason this needs to be DLDI patched, doesn't want to work from AOS directly
+          # nesDS and gameyob need to be DLDI patched, they do not work from AOS directly
           dlditool ../kernel/__rpg/game.dldi gameyob.nds
+          dlditool ../kernel/__rpg/game.dldi nesDS.nds
           cp -r *.nds ../out/acep/__rpg/APP/
           cp -r *.nds ../out/r4it/__rpg/APP/
           cp -r *.nds ../out/r4xx/__rpg/APP/
