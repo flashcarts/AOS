@@ -77,9 +77,11 @@ r4denc -k 0x4002 kernel/wood_r4xx.nds out/ex4ds/wood.dat
 cp out/ex4ds/_ds_menu.dat out/ex4ds/_dsmenu.dat
 
 # package optional dark theme
-mkdir out/aos_dark_theme
-cd aos_dark_theme
-zip -Z store -r ../out/aos_dark_theme/theme.res {calendar,icon,icons.bmp,logo.bmp,version}
-cp setting.ini ../out/aos_dark_theme/setting.ini
+mkdir -p out/aos_dark_theme/theme
+cd out/aos_dark_theme/theme
+cp -r ../../../aos_dark_theme/* .
+mv setting.ini ../setting.ini
+zip -Z store -r ../theme.res *
 cd ..
-
+rm -rf theme
+cd ../..
