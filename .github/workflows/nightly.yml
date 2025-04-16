@@ -31,7 +31,7 @@ jobs:
           wget https://github.com/FluBBaOfWard/S8DS/releases/latest/download/S8DS.zip
           wget -O GBARunner2.nds https://github.com/unresolvedsymbol/GBARunner2-DSL-Enhanced/releases/download/v20201019-DSL_97447fe/GBARunner2_arm9dldi_ds.nds
           wget https://files.deletecat.com/GBARunner3-hicode.zip
-          wget -O GBAR3-Frontend.nds https://github.com/flashcarts/gbar3-frontend/releases/download/v0.9.0-fcnet2/gbar3-frontend-AOS.nds
+          wget -O GBAR3-Frontend.nds https://github.com/flashcarts/gbar3-frontend/releases/download/v0.10.0-fcnet1/gbar3-frontend-AOS.nds
           wget https://github.com/Stewmath/GameYob/releases/download/v0.5.2/gameyob.zip
           wget https://github.com/DS-Homebrew/NesDS/releases/latest/download/nesDS.nds
           unzip GBARunner3-hicode.zip
