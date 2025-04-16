@@ -58,7 +58,7 @@ jobs:
           zip -r ../AOS_EX4DS.zip *
           # Package dark theme
           cd ../aos_dark_theme
-          zip -r ../AOS_Dark_Theme.zip *
+          zip -r ../AOS_Dark_Theme.zip {setting.ini,theme.res}
 
       - name: Prepare for publishing
         run: |
