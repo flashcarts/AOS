@@ -77,6 +77,11 @@ If you have one of these carts, you will need to grab an empty SD card, insert i
 - JenesisDS requires ROMs to be in `.gen`, `.bin`, or `.smd` format to be recognized in the file browser. If you have `.md` ROMs, rename them to `.gen` or `.bin` before placing them in `/ROMs/gen` on your SD card.
 - NeoDS requires ROMs to be converted to `.neo` format before they can be used. [See this README before using.](https://github.com/flashcarts/AOS/blob/master/extras/NeoDS-ReadMe.md)
 
+### Theming
+- To use the AOS-Dark theme in releases, simply download `AOS_Dark_Theme.zip`, and extract it. From the extracted files, copy `theme.res` and `setting.ini` to `/__rpg/extention`. Replace the existing files.
+- You may also customize the theme or make your own. The `theme.res` file is an uncompressed zip file. You can simply rename `theme.res` to `theme.zip` to open it and edit the files inside. It contains the menu icons and backgrounds.
+- To edit the colors and layouts, edit `setting.ini` with Notepad or any other text editor.
+
 ---
 
 ### Packaging steps
