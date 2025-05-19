@@ -38,8 +38,8 @@ jobs:
           cp -r _gba ../out/r4xx
           cp -r _gba ../out/ex4ds
           unzip gameyob.zip; rm gameyob_dsi.nds
-          unzip S8DS.zip
-          unzip NGPDS.zip
+          unzip S8DS.zip S8DS.nds
+          unzip NGPDS.zip NGPDS.nds
           # nesDS and gameyob need to be DLDI patched, they do not work from AOS directly
           dlditool ../kernel/__rpg/game.dldi gameyob.nds
           dlditool ../kernel/__rpg/game.dldi nesDS.nds
