@@ -10,9 +10,10 @@
 09=Colecoemu.ini
 10=PCEemu.ini
 11=NEOemu.ini
-12=A800.ini
-13=A2600.ini
-14=A5200.ini
-15=A7800.ini
-16=MOONSHELL.ini
-17=Slot-2.ini
+12=NGPDS.ini
+13=A800.ini
+14=A2600.ini
+15=A5200.ini
+16=A7800.ini
+17=MOONSHELL.ini
+18=Slot-2.ini

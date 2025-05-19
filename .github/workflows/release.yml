@@ -26,6 +26,7 @@ jobs:
           wget https://github.com/wavemotion-dave/A7800DS/releases/latest/download/A7800DS.nds
           wget https://github.com/wavemotion-dave/ColecoDS/releases/latest/download/ColecoDS.nds
           wget https://github.com/FluBBaOfWard/S8DS/releases/latest/download/S8DS.zip
+          wget https://github.com/FluBBaOfWard/NGPDS/releases/latest/download/NGPDS.zip
           wget -O GBARunner2.nds https://github.com/unresolvedsymbol/GBARunner2-DSL-Enhanced/releases/download/v20201019-DSL_97447fe/GBARunner2_arm9dldi_ds.nds
           wget https://files.deletecat.com/GBARunner3-hicode.zip
           wget -O GBAR3-Frontend.nds https://github.com/flashcarts/gbar3-frontend/releases/download/v0.10.0-fcnet1/gbar3-frontend-AOS.nds

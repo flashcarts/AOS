@@ -49,6 +49,7 @@ If you have one of these carts, you will need to grab an empty SD card, insert i
 - [jEnesisDS](http://www.workingdesign.de/projects/jenesisds.php) ([archive](http://web.archive.org/web/20220813181438/http://www.workingdesign.de/projects/jenesisds.php))
 - [MoonShell 2.10](http://home.att.ne.jp/blue/moonlight) ([archive](http://web.archive.org/web/20111018193827/http://home.att.ne.jp:80/blue/moonlight/))
 - [NeoDS](https://groups.google.com/g/neods)
+- [NGPDS](https://github.com/FluBBaOfWard/NGPDS)
 - [NitroGrafx](https://github.com/FluBBaOfWard/NitroGrafx)
 - [S8DS](https://github.com/FluBBaOfWard/S8DS)
 - [SNEmulDS](https://bitbucket.org/Coto88/snemulds)
@@ -70,6 +71,8 @@ If you have one of these carts, you will need to grab an empty SD card, insert i
    - A7800DS (`highscore.rom` - for 7800 High Score saving) - `/roms/bios`
    - GBARunner2 (`bios.bin`) - `/_gba`
    - GameYob (`gbc_bios.bin` - provides color in GBC titles) - `/roms/gb/`
+   - NGPDS (Color BIOS: `ngp-color-bios.ngp` - Black and White BIOS: `ngp-bnw-bios.ngp`) - `/roms/bios`
+      - The names and location of the Neo Geo Pocket BIOS files can be changed within settings. Those provided above have been pre-set for use in AceOS.
    - S8DS - See [GitHub ReadMe](https://github.com/FluBBaOfWard/S8DS), multiple BIOSes supported.
 
 ### Notes on Emulators in This Package
