@@ -50,6 +50,7 @@ If you have one of these carts, you will need to grab an empty SD card, insert i
 - [MoonShell 2.10](http://home.att.ne.jp/blue/moonlight) ([archive](http://web.archive.org/web/20111018193827/http://home.att.ne.jp:80/blue/moonlight/))
 - [NeoDS](https://groups.google.com/g/neods)
 - [NGPDS](https://github.com/FluBBaOfWard/NGPDS)
+    - Not available on AOS_EX4DS due to icon limitations
 - [NitroGrafx](https://github.com/FluBBaOfWard/NitroGrafx)
 - [S8DS](https://github.com/FluBBaOfWard/S8DS)
 - [SNEmulDS](https://bitbucket.org/Coto88/snemulds)
