@@ -43,9 +43,8 @@ jobs:
           unzip gameyob.zip; rm gameyob_dsi.nds
           unzip S8DS.zip S8DS.nds
           unzip NGPDS.zip NGPDS.nds
-          # nesDS and gameyob need to be DLDI patched, they do not work from AOS directly
+          # gameyob need to be DLDI patched, it does not work from AOS directly
           dlditool ../kernel/__rpg/game.dldi gameyob.nds
-          dlditool ../kernel/__rpg/game.dldi nesDS.nds
           cp -r *.nds ../out/acep/__rpg/APP/
           cp -r *.nds ../out/r4it/__rpg/APP/
           cp -r *.nds ../out/r4xx/__rpg/APP/
