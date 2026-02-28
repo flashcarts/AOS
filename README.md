@@ -18,6 +18,10 @@ This repository aims to re-pack the official AOS software by ace3ds.com with new
     - R4iLS
     - r4isdhc.com.cn
     - r4isdhc.hk 2021+
+    - r4iwood.cn
+    - woodr4isdhc.com
+    - woodbeyond.com
+    - r4xmp.com
     - ge.ndsi.in GEi HOT
 - AOS_EX4DS:
     - EX4DS
@@ -25,6 +29,8 @@ This repository aims to re-pack the official AOS software by ace3ds.com with new
 The following carts can be either an Ace3DS+ or an R4iLS:
 
 - XXX in 1 carts
+- r4azure.com carts
+- r4inp.com carts
 - Unlabeled carts with a red PCB - [(Image)](https://www.flashcarts.net/assets/images/ds_carts/ace3ds-nolabel.png)
 - Flashcarts labeled as a game - [(Image)](https://i.imgur.com/SNVieqW.png)
 
@@ -50,10 +56,9 @@ If you have one of these carts, you will need to grab an empty SD card, insert i
 - [MoonShell 2.10](http://home.att.ne.jp/blue/moonlight) ([archive](http://web.archive.org/web/20111018193827/http://home.att.ne.jp:80/blue/moonlight/))
 - [NeoDS](https://groups.google.com/g/neods)
 - [NGPDS](https://github.com/FluBBaOfWard/NGPDS)
-    - Not available on AOS_EX4DS due to icon limitations
 - [NitroGrafx](https://github.com/FluBBaOfWard/NitroGrafx)
 - [S8DS](https://github.com/FluBBaOfWard/S8DS)
-- [SNEmulDS](https://bitbucket.org/Coto88/snemulds)
+- [SNEmulDS](https://github.com/cotodevel/snemulds)
 
 ### Setup
 
