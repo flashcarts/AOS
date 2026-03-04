@@ -81,6 +81,9 @@ If you have one of these carts, you will need to grab an empty SD card, insert i
       - The names and location of the Neo Geo Pocket BIOS files can be changed within settings. Those provided above have been pre-set for use in AceOS.
    - S8DS - See [GitHub ReadMe](https://github.com/FluBBaOfWard/S8DS), multiple BIOSes supported.
 
+### BIOS Dumping Guides
+- **GBA:** https://wiki.ds-homebrew.com/gbarunner2/bios
+
 ### Notes on Emulators in This Package
 - While GBARunner2 will work without a BIOS, GBARunner3 **will not** until one is placed in `_gba`. Be sure to add a GameBoy Advance BIOS before using it.
 - JenesisDS requires ROMs to be in `.gen`, `.bin`, or `.smd` format to be recognized in the file browser. If you have `.md` ROMs, rename them to `.gen` or `.bin` before placing them in `/ROMs/gen` on your SD card.
