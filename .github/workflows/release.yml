@@ -27,6 +27,7 @@ jobs:
           wget https://github.com/wavemotion-dave/ColecoDS/releases/latest/download/ColecoDS.nds
           wget https://github.com/FluBBaOfWard/S8DS/releases/latest/download/S8DS.zip
           wget https://github.com/FluBBaOfWard/NGPDS/releases/latest/download/NGPDS.zip
+          wget https://github.com/FluBBaOfWard/NitroGrafx/releases/download/v0.9.0/NitroGrafx0_9_0.zip
           wget -O GBARunner2.nds https://github.com/unresolvedsymbol/GBARunner2-DSL-Enhanced/releases/download/v20201019-DSL_97447fe/GBARunner2_arm9dldi_ds.nds
           wget https://files.deletecat.com/GBARunner3-hicode.zip
           wget -O GBAR3-Frontend.nds https://github.com/flashcarts/gbar3-frontend/releases/download/v0.10.0-fcnet2/gbar3-frontend-AOS.nds
@@ -40,6 +41,7 @@ jobs:
           unzip gameyob.zip; rm gameyob_dsi.nds
           unzip S8DS.zip S8DS.nds
           unzip NGPDS.zip NGPDS.nds
+          unzip NitroGrafx0_9_0.zip NitroGrafx.nds
           # gameyob needs to be DLDI patched, it does not work from AOS directly
           dlditool ../kernel/__rpg/game.dldi gameyob.nds
           cp -r *.nds ../out/acep/__rpg/APP/
