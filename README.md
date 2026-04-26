@@ -23,6 +23,7 @@ This repository aims to re-pack the official AOS software by ace3ds.com with new
     - woodbeyond.com
     - r4xmp.com
     - ge.ndsi.in GEi HOT
+    - qq3ds.com DS
 - AOS_EX4DS:
     - EX4DS
  
